@@ -1,0 +1,41 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 728px) {
+  .container {
+    width: 620px;
+  }
+  .page-content {
+    flex-direction: row;
+  }
+
+  .content {
+    width: 320px;
+  }
+
+  .sidebar {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 9600px;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 650px;
+  }
+
+  .sidebar {
+    width: 300px;
+  }
+}
